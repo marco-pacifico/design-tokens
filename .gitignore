@@ -1,0 +1,15 @@
+# Dependency directories
+/node_modules
+node_modules/
+
+# Environment variables
+.env
+
+# Build outputs
+/build
+
+# macOS system files
+.DS_Store
+
+# vercel
+.vercel
