@@ -1,4 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
+import { COLORS } from '../design-tokens'
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
   const { name = 'tokens' } = req.query
@@ -7,7 +8,5 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader('Access-Control-Allow-Origin', '*');
 
 
-  return res.json({
-    message: `Hello ${name}!`,
-  })
+  return res.json(COLORS);
 }
